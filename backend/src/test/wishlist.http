@@ -1,0 +1,48 @@
+###
+# @name login
+POST {{baseUrl}}/signin HTTP/1.1
+Content-type: application/json
+
+{
+  "username": "exampleuser",
+  "password": "somestrongpassword"
+}
+###
+@authToken = {{login.response.body.access_token}}
+###
+
+POST {{baseUrl}}/wishlists HTTP/1.1
+Content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "name": "Мой вишлист5",
+  "image": "https://i.pravatar.cc/150?img=3",
+  "itemsId": [
+    2,8,9
+  ]
+}
+
+###
+GET {{baseUrl}}/wishlists HTTP/1.1
+
+###
+GET {{baseUrl}}/wishlists/46 HTTP/1.1
+
+###
+PATCH {{baseUrl}}/wishlists/46
+Content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "name": "Мой вишлист9",
+  "image": "https://i.pravatar.cc/150?img=3",
+  "itemsId": [
+    2,8,9
+  ]
+}
+
+###
+DELETE {{baseUrl}}/wishlists/46 HTTP/1.1
+Content-type: application/json
+Authorization: Bearer {{authToken}}
