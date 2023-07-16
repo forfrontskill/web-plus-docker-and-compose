@@ -1,3 +1,4 @@
-# Докеризация приложения
-
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+Расположение ресурсов:
+IP адрес 51.250.97.8
+Frontend https://kupipodarid.forfrontskill.nomoredomains.xyz
+Backend https://api.kupi.forfrontskill.nomoredomains.xyz
