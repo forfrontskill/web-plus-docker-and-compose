@@ -1,4 +1,4 @@
-export const URL = "https://api.kupi.forfrontskill.nomoredomains.xyz";
+export const URL = "https://api.kupipodariday.ffskill.nomoredomains.xyz";
 
 export const MINIMUM_PASSWORD_LENGTH = 3;
 export const MINIMUM_USERNAME_LENGTH = 3;
